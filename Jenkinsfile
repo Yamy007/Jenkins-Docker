@@ -23,8 +23,8 @@ pipeline {
                                                   usernameVariable: 'DOCKER_USER',
                                                   passwordVariable: 'DOCKER_PASS')]) {
                     sh 'echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin'
-                    sh 'docker tag sadovskyiapp:latest yamy/sadovskyiapp:latest'
-                    sh 'docker push yamy/sadovskyiapp:latest'
+                    sh 'docker tag sadovskyiapp:latest yamy12/sadovskyiapp:latest'
+                    sh 'docker push yamy12/sadovskyiapp:latest'
                 }
             }
         }
